@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Task2</string>
+    <string name="get_start">Get Started</string>
+    <string name="abda">abda</string>
+    <string name="dot">.</string>
+    <string name="desc">Watch your favorite moview or series on only one platform. You can Watch it anytime and any where</string>
+    <string name="welcome">Welcome Back!</string>
+    <string name="desc2">Please sign in to your account</string>
+    <string name="hint1">Example@gmail.com</string>
+    <string name="hint2">Password</string>
+    <string name="forgot">Forgot Password?</string>
+    <string name="signin">Sign In</string>
+    <string name="signin2">Sign In with Google</string>
+    <string name="donthave">Don't have an Account?</string>
+    <string name="signup">Sign Up</string>
+
+</resources>

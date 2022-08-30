@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Project Android/qtn-km-ikhsanadityanq/app/src/main/res/layout/activity_detail.xml" value="0.209375" />
+        <entry key="..\:/Project Android/qtn-km-ikhsanadityanq/task2/src/main/res/drawable/button_primary.xml" value="0.1" />
+        <entry key="..\:/Project Android/qtn-km-ikhsanadityanq/task2/src/main/res/drawable/button_primary_white.xml" value="0.1635" />
+        <entry key="..\:/Project Android/qtn-km-ikhsanadityanq/task2/src/main/res/drawable/ic_google.xml" value="0.207" />
+        <entry key="..\:/Project Android/qtn-km-ikhsanadityanq/task2/src/main/res/layout/activity_main.xml" value="0.1953125" />
+        <entry key="..\:/Project Android/qtn-km-ikhsanadityanq/task2/src/main/res/layout/activity_signin.xml" value="0.2" />
+        <entry key="..\:/Project Android/qtn-km-ikhsanadityanq/task2/src/main/res/layout/activity_start.xml" value="0.25" />
+        <entry key="..\:/Project Android/qtn-km-ikhsanadityanq/task2/src/main/res/layout/signin_activity.xml" value="0.1718683197947841" />
+        <entry key="..\:/Project Android/qtn-km-ikhsanadityanq/task2/src/main/res/layout/start_activity.xml" value="0.1718683197947841" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_16" project-jdk-name="16" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
