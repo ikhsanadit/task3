@@ -3,6 +3,7 @@ package com.qtnkm.task2
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import com.qtnkm.task2.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -22,10 +23,19 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun actionButton() {
+        showLoading(false)
         binding.buttonGet.setOnClickListener {
             startActivity(
                 Intent(this, SigninActivity::class.java)
             )
+            showLoading(true)
+        }
+    }
+
+    private fun showLoading(loading: Boolean) {
+        when(loading) {
+            true -> binding.rdLoad.visibility = View.VISIBLE
+            false -> binding.rdLoad.visibility = View.GONE
         }
     }
 }

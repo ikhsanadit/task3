@@ -2,6 +2,7 @@ package com.qtnkm.task2
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.qtnkm.task2.databinding.ActivitySigninBinding
@@ -20,15 +21,19 @@ class SigninActivity : AppCompatActivity() {
     }
 
     private fun validation() {
+        showLoading(false)
         binding.buttonSignin.setOnClickListener {
             if (binding.textEmailin.text.toString() == "ikhsan@gmail.com" && binding.textPass.text.toString() == "aditya11"){
                 Toast.makeText(this, "Login Success", Toast.LENGTH_SHORT).show()
                 startActivity(
                     Intent(this, HomeActivity::class.java)
                 )
+                showLoading(true)
             }else if(binding.textEmailin.text.toString().isEmpty() && binding.textPass.text.toString().isEmpty()){
+                showLoading(false)
                 Toast.makeText(this, "Email or Password is Empty", Toast.LENGTH_SHORT).show()
             }else{
+                showLoading(false)
                 Toast.makeText(this,"Email or Password Salah",Toast.LENGTH_SHORT).show()
             }
         }
@@ -38,6 +43,12 @@ class SigninActivity : AppCompatActivity() {
                     Intent(this, SignupActivity::class.java)
                 )
             }
+        }
+    }
+    private fun showLoading(loading: Boolean) {
+        when(loading) {
+            true -> binding.rdLoad.visibility = View.VISIBLE
+            false -> binding.rdLoad.visibility = View.GONE
         }
     }
 

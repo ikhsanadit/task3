@@ -2,6 +2,7 @@ package com.qtnkm.task2
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.qtnkm.task2.databinding.ActivitySignupBinding
@@ -20,6 +21,7 @@ class SignupActivity : AppCompatActivity() {
     }
 
     private fun validation() {
+        showLoading(false)
         binding.buttonSignup.setOnClickListener {
             if (binding.rvName.text.toString().isEmpty()) {
             Toast.makeText(this, "Full Name is Empty", Toast.LENGTH_SHORT).show()
@@ -38,6 +40,7 @@ class SignupActivity : AppCompatActivity() {
                     startActivity(
                         Intent(this, SigninActivity::class.java)
                     )
+                    showLoading(true)
                 }
             }
         }
@@ -47,6 +50,12 @@ class SignupActivity : AppCompatActivity() {
                     Intent(this, SigninActivity::class.java)
                 )
             }
+        }
+    }
+    private fun showLoading(loading: Boolean) {
+        when(loading) {
+            true -> binding.rdLoad.visibility = View.VISIBLE
+            false -> binding.rdLoad.visibility = View.GONE
         }
     }
 }

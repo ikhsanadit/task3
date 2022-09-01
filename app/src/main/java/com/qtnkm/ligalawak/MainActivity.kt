@@ -60,7 +60,6 @@ class MainActivity : AppCompatActivity() {
         })
     }
 
-
     private fun showLoading(loading: Boolean) {
         when(loading) {
             true -> binding.rdLoad.visibility = View.VISIBLE
