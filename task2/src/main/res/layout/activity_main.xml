@@ -33,7 +33,7 @@
         style="@style/Header1_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin_start_end2"
+        android:layout_marginStart="@dimen/margin_80"
         android:text="@string/dot"
         app:layout_constraintBottom_toBottomOf="@+id/rv_text1"
         app:layout_constraintEnd_toEndOf="parent"
@@ -50,12 +50,12 @@
         android:layout_marginEnd="@dimen/margin_start_end2"
         android:gravity="center"
         android:text="@string/desc"
-        app:layout_constraintBottom_toTopOf="@+id/button1"
+        app:layout_constraintBottom_toTopOf="@+id/buttonGet"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/buttonGet"
         android:layout_width="@dimen/size_0"
         android:layout_height="@dimen/height_button"
         style="@style/ButtonPrimary"

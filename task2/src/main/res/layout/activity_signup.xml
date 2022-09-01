@@ -2,11 +2,10 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/black_2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black_2"
-    tools:context=".SigninActivity">
-
+    tools:context=".SignupActivity">
 
     <TextView
         android:id="@+id/head1"
@@ -14,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/padding_125"
-        android:text="@string/welcome"
+        android:text="@string/create"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -25,41 +24,86 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/padding_10"
-        android:text="@string/desc2"
+        android:text="@string/desc3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/head1" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textEmail"
+        android:id="@+id/containerName"
+        style="@style/containerPrimary"
         android:layout_width="@dimen/size_0"
         android:layout_height="wrap_content"
-        style="@style/containerPrimary"
+        android:textColorHint="@color/white"
         app:boxCornerRadiusBottomEnd="@dimen/padding_15"
         app:boxCornerRadiusBottomStart="@dimen/padding_15"
         app:boxCornerRadiusTopEnd="@dimen/padding_15"
         app:boxCornerRadiusTopStart="@dimen/padding_15"
-        android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/desc2">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/text_emailin"
+            android:id="@+id/rvName"
             style="@style/EditTextPrimary"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/hint1"
+            android:hint="@string/fullname"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/containerEmail"
+        style="@style/containerPrimary2"
+        android:layout_width="@dimen/size_0"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/white"
+        app:boxCornerRadiusBottomEnd="@dimen/padding_15"
+        app:boxCornerRadiusBottomStart="@dimen/padding_15"
+        app:boxCornerRadiusTopEnd="@dimen/padding_15"
+        app:boxCornerRadiusTopStart="@dimen/padding_15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/containerName">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/rvEmail"
+            style="@style/EditTextPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
             android:inputType="textEmailAddress" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textPassword"
+        android:id="@+id/containerPhone"
         style="@style/containerPrimary2"
-        android:layout_width="0dp"
+        android:layout_width="@dimen/size_0"
         android:layout_height="wrap_content"
         android:textColorHint="@color/white"
-        app:boxBackgroundMode="filled"
+        app:boxCornerRadiusBottomEnd="@dimen/padding_15"
+        app:boxCornerRadiusBottomStart="@dimen/padding_15"
+        app:boxCornerRadiusTopEnd="@dimen/padding_15"
+        app:boxCornerRadiusTopStart="@dimen/padding_15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/containerEmail">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/rvPhone"
+            style="@style/EditTextPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/phone"
+            android:inputType="phone" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/containerPassword"
+        style="@style/containerPrimary2"
+        android:layout_width="@dimen/size_0"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/white"
         app:boxCornerRadiusBottomEnd="@dimen/padding_15"
         app:boxCornerRadiusBottomStart="@dimen/padding_15"
         app:boxCornerRadiusTopEnd="@dimen/padding_15"
@@ -68,49 +112,26 @@
         app:endIconTint="@color/gray"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textEmail">
+        app:layout_constraintTop_toBottomOf="@+id/containerPhone">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/text_pass"
+            android:id="@+id/rvPassword"
             style="@style/EditTextPrimary"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/hint2"
-            android:inputType="textPassword" />
+            android:hint="@string/hint2" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <TextView
-        android:id="@+id/textView1"
-        style="@style/Desc2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/padding_10"
-        android:layout_marginEnd="@dimen/margin_start_end"
-        android:text="@string/forgot"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textPassword" />
-
     <Button
-        android:id="@+id/buttonSignin"
+        android:id="@+id/buttonSignup"
         style="@style/ButtonPrimary"
         android:layout_width="@dimen/size_0"
         android:layout_height="@dimen/height_button"
         android:layout_marginTop="@dimen/padding_100"
-        android:text="@string/signin"
+        android:text="@string/signup"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView1" />
-
-    <Button
-        android:id="@+id/buttonSigninWith"
-        style="@style/ButtonPrimaryWhite"
-        android:layout_width="@dimen/size_0"
-        android:layout_height="@dimen/height_button"
-        android:text="@string/signin2"
-        android:drawableLeft="@drawable/ic_google"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonSignin" />
+        app:layout_constraintTop_toBottomOf="@+id/containerPassword" />
 
     <TextView
         android:id="@+id/textView2"
@@ -118,20 +139,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/padding_30"
-        android:layout_marginStart="@dimen/padding_90"
-        android:text="@string/donthave"
+        android:layout_marginStart="@dimen/padding_125"
+        android:text="@string/have"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonSigninWith" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonSignup" />
 
     <TextView
-        android:id="@+id/textViewSignup"
+        android:id="@+id/textViewSignin"
         style="@style/Header2_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/signup"
+        android:text="@string/signin"
         app:layout_constraintBottom_toBottomOf="@+id/textView2"
         app:layout_constraintStart_toEndOf="@+id/textView2"
         app:layout_constraintTop_toTopOf="@+id/textView2" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
