@@ -140,6 +140,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/padding_30"
         android:layout_marginStart="@dimen/padding_125"
+        android:enabled="false"
         android:text="@string/have"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonSignup" />

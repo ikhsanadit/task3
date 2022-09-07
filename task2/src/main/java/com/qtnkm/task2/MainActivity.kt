@@ -17,9 +17,6 @@ class MainActivity : AppCompatActivity() {
         supportActionBar?.hide()
 
         actionButton()
-        /*binding.buttonGet.setOnClickListener {
-            startActivity(Intent(this, SigninActivity::class.java))
-        }*/
     }
 
     private fun actionButton() {

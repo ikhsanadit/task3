@@ -9,8 +9,8 @@
 
     <View
         android:id="@+id/view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/size_0"
+        android:layout_height="@dimen/size_0"
         android:background="@drawable/bg_image"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

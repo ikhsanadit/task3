@@ -15,8 +15,6 @@
         <item name="android:layout_marginTop">@dimen/padding_10</item>
         <item name="android:fontFamily">@font/alata_regular</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:paddingLeft">@dimen/padding_50</item>
-        <item name="android:paddingRight">@dimen/padding_50</item>
         <item name="android:textColor">@color/blue_3</item>
         <item name="android:layout_marginStart">@dimen/margin_start_end</item>
         <item name="android:layout_marginEnd">@dimen/margin_start_end</item>
